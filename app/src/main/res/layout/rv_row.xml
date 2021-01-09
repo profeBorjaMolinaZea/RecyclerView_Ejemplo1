@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:textAlignment="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/row_img"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:adjustViewBounds="true"
+                android:focusableInTouchMode="false"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/mul" />
+
+            <TextView
+                android:id="@+id/row_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#66000000"
+                android:gravity="center"
+                android:text="Nombre"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/row_img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/row_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Altura: "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/row_img" />
+
+            <TextView
+                android:id="@+id/row_continent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Continente: "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/row_h" />
+
+            <TextView
+                android:id="@+id/row_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:shadowColor="#FFFFFF"
+                android:text="Ver más"
+                android:textColor="#3F51B5"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/row_delete" />
+
+            <ImageButton
+                android:id="@+id/row_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/design_default_color_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

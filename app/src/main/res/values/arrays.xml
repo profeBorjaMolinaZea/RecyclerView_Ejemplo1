@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nombres">
+        <item>Mulhacén</item>
+        <item>Kilimanjaro</item>
+        <item>Everest</item>
+    </string-array>
+
+    <integer-array name="alturas">
+        <item>3482</item>
+        <item>5895</item>
+        <item>8849</item>
+    </integer-array>
+
+    <array name="fotos">
+        <item>@drawable/mul</item>
+        <item>@drawable/kili</item>
+        <item>@drawable/everest</item>
+    </array>
+
+    <string-array name="URLS">
+        <item>https://en.wikipedia.org/wiki/Mulhac%C3%A9n</item>
+        <item>https://en.wikipedia.org/wiki/Mount_Kilimanjaro</item>
+        <item>https://en.wikipedia.org/wiki/Mount_Everest</item>
+    </string-array>
+
+    <string-array name="continentes">
+        <item>Europa</item>
+        <item>África</item>
+        <item>Asia</item>
+    </string-array>
+</resources>
