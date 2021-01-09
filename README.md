@@ -1,1 +1,1 @@
-# RecyclerView_Ejemplo1
+# Ejemplo de uso de RecyclerView en Android Studio
